@@ -33,7 +33,11 @@ public class Agenda {
         while (exitCreateContact != 0) {
             Perfil newContact = new Perfil();
             System.out.println(newContact.getData());
-            WriteAgenda(agenda, newContact);
+            try {
+                WriteAgenda(agenda, newContact);
+            } catch (Exception ex) {
+                System.out.println("[ERROR]: " + ex.getMessage());
+            }
             System.out.println("Desea crear un nuevo contacto: \n1 - Sí \n0 - no");
             try {
                 exitCreateContact = Input.num();
@@ -49,6 +53,8 @@ public class Agenda {
             if (agenda[i] == null) {
                 agenda[i] = newContact;
                 break;
+            } else if (agenda[4] != null) {
+                agenda[5] = newContact;
             }
         }
     }
