@@ -11,7 +11,7 @@ Con el ejercicio anterior, crea una clase que se llame “Perfil” y utiliza lo
 datos anteriores para generar un objeto de este tipo.
 
 ## Ejercicio 3
-Crea una clase que se llame “Agenda” y tenga un array de “Perfil”. Haz que
+Crea una clase que se llame “Main” y tenga un array de “Perfil”. Haz que
 los perfiles, una vez creados, se añadan a la agenda.
 
 ## Ejercicio 4
